@@ -1,0 +1,13 @@
+## 友情链接
+# name:         文字/标题
+# link:         链接路径，无链接为空即可
+#
+- name: 北京大学
+  link: https://www.pku.edu.cn/
+
+- name: 北京大学电子学院
+  link: https://ele.pku.edu.cn/
+
+- name: 北京大学碳基电子学研究中心
+  link: https://cbic.pku.edu.cn/
+

@@ -1,0 +1,28 @@
+## 项目案例
+# name:         标题
+# en_name:      英文标题
+# description:  描述内容
+# cover:        封面图片路径
+# link:         链接路径，无链接为空即可
+# preview:      预览路径，无则可以为空
+#
+- name: 恭喜刘天驰同学获得北京大学电子学院优秀大学生夏令营优秀营员称号
+  en_name: Cheers! Welcome Tianchi Liu join School of Electronics
+  description: 恭喜刘天驰同学获得北京大学电子学院优秀大学生夏令营优秀营员称号
+  cover: /images/sample/20230723.png
+  link: /2023/07/23/welcome-ltc/
+  preview: 
+
+- name: 欢迎电子学院助理教授陈荣梅入职！
+  en_name: Cheers! Welcome Assistant Professor Rongmei Chen join School of Electronics
+  description: 欢迎北京大学电子学院助理教授陈荣梅入职！
+  cover: /images/sample/20230702.png
+  link: /2023/07/22/welcome/
+  preview: 
+
+- name: 欢迎电子学院助理教授陈荣梅入职！
+  en_name: Cheers! Welcome Assistant Professor Rongmei Chen join School of Electronics
+  description: 欢迎北京大学电子学院助理教授陈荣梅入职！
+  cover: /images/sample/20230702.png
+  link: /2023/07/22/welcome/
+  preview: 
