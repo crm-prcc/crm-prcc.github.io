@@ -1026,14 +1026,14 @@ section {
 }
 .article-inner {
     padding: 1rem;
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 @media screen and (max-width: 480px) {
     .article-inner {
-        max-width: 50%;
+        max-width: 80%;
         height: auto;
         margin-right: auto;
         margin-left: auto;
