@@ -1031,7 +1031,7 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .article-inner {
         max-width: 80%;
         height: auto;
@@ -1905,7 +1905,7 @@ code {
 .list-inline {
   list-style: none;
   padding-left: 0;
-  margin-left: 0;
+  margin-left: auto;
 }
 .list-inline {
   position: relative;
