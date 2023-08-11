@@ -1039,6 +1039,38 @@ section {
         margin-left: auto;
     }
 }
+.article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-wrapper .img {
+    flex: 0 1 30%;
+}
+
+.article-wrapper .p {
+    flex: 1 1 70%;
+}
+@media screen and (max-width: 1000px) {
+    .article-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-wrapper .img {
+       flex: 0 1 auto;
+    }
+
+    .article-wrapper .p {
+        flex: 1 1 auto;
+    }
+}
 .article-header {
   margin-bottom: 1rem;
 }
