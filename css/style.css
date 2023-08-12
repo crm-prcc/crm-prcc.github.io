@@ -1066,7 +1066,7 @@ section {
     }
 
     .article-wrapper .right {
-        flex: 0 0 auto;
+        flex: 0 0 210rem;
     }
 }
 .article-header {
