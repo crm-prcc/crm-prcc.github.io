@@ -1051,7 +1051,7 @@ section {
 }
 
 .article-wrapper .right {
-    flex: 0 0 210px;
+    flex: 0 0 30%;
 }
 @media screen and (max-width: 1000px) {
     .article-wrapper {
@@ -1066,7 +1066,7 @@ section {
     }
 
     .article-wrapper .right {
-        flex: 0 0 210px;
+        flex: 0 0 30%;
     }
 }
 .article-header {
