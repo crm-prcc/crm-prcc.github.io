@@ -1047,11 +1047,11 @@ section {
     align-items: center;
 }
 
-.article-wrapper .img {
-    flex-basis: 30%;
+.article-wrapper .left {
+    flex: 0 1 30%;
 }
 
-.article-wrapper .p {
+.article-wrapper .right {
     flex: 1 1 70%;
 }
 @media screen and (max-width: 1000px) {
