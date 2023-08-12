@@ -1043,11 +1043,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .article-wrapper .left {
-    flex: 1 1 auto;
+    flex: 1 1 64%;
 }
 
 .article-wrapper .right {
@@ -1058,7 +1058,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .article-wrapper .left {
