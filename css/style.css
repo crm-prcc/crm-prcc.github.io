@@ -1041,7 +1041,7 @@ section {
 }
 .article-wrapper {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
