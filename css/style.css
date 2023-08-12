@@ -1041,32 +1041,32 @@ section {
 }
 .article-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .article-wrapper .left {
-    flex: 0 1 33.33%;
+    flex: 0 1 30%;
 }
 
 .article-wrapper .right {
     flex: 1 1 66.66%;
+    text-align: justify;
 }
 @media screen and (max-width: 1000px) {
     .article-wrapper {
         display: flex;
         flex-wrap: wrap;
-        max-width: 80%;
         justify-content: center;
         align-items: center;
     }
 
-    .article-wrapper .img {
+    .article-wrapper .left {
        flex: 0 1 auto;
     }
 
-    .article-wrapper .p {
+    .article-wrapper .right {
         flex: 1 1 auto;
     }
 }
