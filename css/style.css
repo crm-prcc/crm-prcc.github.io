@@ -1052,7 +1052,6 @@ section {
 
 .article-wrapper .right {
     flex: 1 1 66.66%;
-    text-align: justify;
 }
 @media screen and (max-width: 1000px) {
     .article-wrapper {
