@@ -347,14 +347,14 @@ abbr {
   border-bottom: 1px dotted;
 }
 a {
-  color: #1e90ff;
+  color: #800000;
   text-decoration: none;
 }
 a:hover {
-  color: #800000;
+  color: #EE6363;
 }
 a:active {
-  color: #800000;
+  color: #FFB5C5;
 }
 a.disabled {
   color: #6c757d;
