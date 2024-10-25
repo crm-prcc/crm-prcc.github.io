@@ -1047,7 +1047,7 @@ section {
 }
 
 .article-wrapper .left {
-    flex: 1 1 64%;
+    flex: 0 0 64%;
 }
 
 .article-wrapper .right {
@@ -1062,7 +1062,7 @@ section {
     }
 
     .article-wrapper .left {
-      flex: 1 1 auto;
+      flex: 0 0 auto;
     }
 
     .article-wrapper .right {
