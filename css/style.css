@@ -1041,42 +1041,47 @@ section {
 }
 .article-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%; /* 确保在容器内 */
+    justify-content: space-around; /* 确保图片等距排列 */
+    align-items: flex-start; /* 确保所有项目在顶部对齐 */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-    .article-wrapper img {
-        width: 100%; /* 让图片填满容器 */
-        height: auto; /* 保持纵横比 */
-        max-width: 150px; /* 设置最大宽度 */
+.article-item {
+    text-align: center; /* 让姓名居中 */
+    width: 30%; /* 确保每个容器占30%宽度 */
+}
+
+    .article-item img {
+        width: 100%; /* 确保图片占满容器 */
+        height: auto; /* 保持图片纵横比 */
+        max-width: 200px; /* 限制最大宽度 */
+        display: block;
+        margin: 0 auto;
     }
 
-    .article-wrapper .container {
-        display: flex;
-        flex-direction: column; /* 垂直排列 */
-        align-items: center; /* 中心对齐 */
-    }
-
-    .article-wrapper p {
-        margin-top: 10px; /* 图片和姓名之间的间距 */
+    .article-item p {
+        margin-top: 10px; /* 图片与名字之间的间距 */
+        font-size: 16px;
+        color: black; /* 可根据需要修改颜色 */
     }
 
 @media screen and (max-width: 1000px) {
     .article-wrapper {
+        flex-wrap: wrap; /* 小屏幕时自动换行 */
         justify-content: center; /* 居中排列 */
     }
-}
 
-    .article-wrapper .left {
-      flex: 0 0 30%;
+    .article-item {
+        width: 45%; /* 小屏幕时每行两个项目 */
+        margin-bottom: 20px; /* 增加底部间距 */
     }
 
-    .article-wrapper .right {
-        flex: 0 0 30%;
-    }
+        .article-item img {
+            max-width: 150px; /* 小屏幕时缩小图片 */
+        }
 }
+
 .article-header {
   margin-bottom: 1rem;
 }
