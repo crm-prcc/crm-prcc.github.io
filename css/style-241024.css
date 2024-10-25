@@ -1044,30 +1044,22 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%; /* 确保在容器内 */
 }
 
-    .article-wrapper img {
-        width: 100%; /* 让图片填满容器 */
-        height: auto; /* 保持纵横比 */
-        max-width: 150px; /* 设置最大宽度 */
-    }
+.article-wrapper .left {
+    flex: 0 0 30%;
+}
 
-    .article-wrapper .container {
-        display: flex;
-        flex-direction: column; /* 垂直排列 */
-        align-items: center; /* 中心对齐 */
-    }
-
-    .article-wrapper p {
-        margin-top: 10px; /* 图片和姓名之间的间距 */
-    }
-
+.article-wrapper .right {
+    flex: 0 0 30%;
+}
 @media screen and (max-width: 1000px) {
     .article-wrapper {
-        justify-content: center; /* 居中排列 */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
-}
 
     .article-wrapper .left {
       flex: 0 0 30%;
