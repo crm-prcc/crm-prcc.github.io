@@ -1045,17 +1045,21 @@ section {
     align-items: flex-start; /* 确保所有项目在顶部对齐 */
     max-width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap; /* 允许换行，以适应小屏幕 */
 }
 
 .article-item {
     text-align: center; /* 让姓名居中 */
     width: 30%; /* 确保每个容器占30%宽度 */
+    padding: 10px; /* 增加内部填充 */
+    margin: 10px; /* 增加外部间距 */
+    box-sizing: border-box; /* 确保 padding 和 margin 不影响宽度 */
 }
 
     .article-item img {
         width: 100%; /* 确保图片占满容器 */
         height: auto; /* 保持图片纵横比 */
-        max-width: 200px; /* 限制最大宽度 */
+        max-width: 100%; /* 限制最大宽度 */
         display: block;
         margin: 0 auto;
     }
@@ -1070,6 +1074,7 @@ section {
     .article-wrapper {
         flex-wrap: wrap; /* 小屏幕时自动换行 */
         justify-content: center; /* 居中排列 */
+        margin: 10px; /* 保留外部间距 */
     }
 
     .article-item {
@@ -1080,6 +1085,13 @@ section {
         .article-item img {
             max-width: 80%; /* 小屏幕时缩小图片 */
         }
+}
+
+@media screen and (max-width: 600px) {
+  .article-item {
+      width: 80%; /* 更小屏幕时每行一个项目 */
+      margin: 10px auto; /* 保持上下左右间隔并居中 */
+  }
 }
 
 .article-header {
