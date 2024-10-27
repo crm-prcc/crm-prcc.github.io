@@ -1078,7 +1078,7 @@ section {
     }
 
         .article-item img {
-            max-width: 150px; /* 小屏幕时缩小图片 */
+            max-width: 80%; /* 小屏幕时缩小图片 */
         }
 }
 
