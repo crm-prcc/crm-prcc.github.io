@@ -8,8 +8,16 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-family: "Baumans","san-serif";
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0.67em 0;
+}
+hp {
+    font-family: "Baumans","san-serif";
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0.67em 0;
 }
 hr {
   box-sizing: content-box /* 1 */;
@@ -56,6 +64,8 @@ sup {
 }
 img {
   border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 button,
 input,
@@ -159,15 +169,15 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  position: relative;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #212529;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #212529;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 .feather {
   text-align: bottom;
@@ -178,11 +188,11 @@ body {
 .article-entry a {
   text-decoration: none;
   padding-bottom: 0.1rem;
-  border-bottom: 0.2rem solid rgba(128,0,0,0.25);
+  border-bottom: 0.2rem solid rgba(30,144,255,0.25);
   transition: all 0.3s ease-in-out 0s;
 }
 .article-entry a:hover {
-  border-bottom-color: rgba(128,0,0,0.75);
+  border-bottom-color: rgba(30,144,255,0.75);
 }
 .article-entry a:active {
   border-bottom-style: dashed;
@@ -276,7 +286,7 @@ body {
   padding-left: 2rem;
   width: 100%;
   overflow: auto;
-  border-left: 0.4rem #fff solid;
+  border-left: 0.4rem #ffa502 solid;
   color: #6c757d;
 }
 .article-entry blockquote p {
@@ -318,7 +328,7 @@ cite {
 }
 sup,
 sub {
-  font-size: 75%;
+  font-size: 90%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -341,21 +351,26 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #a60000;
+  color: #EE6363;
 }
 a:active {
-  color: #730000;
+  color: #FFB5C5;
 }
 a.disabled {
   color: #6c757d;
 }
 h1,
 .h1 {
-  font-size: 4rem;
+    font-family: "Baumans","NotoSC","san-serif";
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0.67em 0;
 }
 h2,
 .h2 {
-  font-size: 3.2rem;
+    font-family: "NotoSC","san-serif";
+    font-size: 20px;
+    font-weight: normal;
 }
 h3,
 .h3 {
@@ -379,7 +394,8 @@ h6,
   margin: 1rem 0;
 }
 .text-center {
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .text-right {
   text-align: right;
@@ -406,24 +422,24 @@ h6,
   background-color: #800000 !important;
 }
 .btn-primary {
+    background-color: #800000;
+    border-color: #800000;
+}
+.btn-primary:hover {
+    background-color: #800000;
+}
+.text-secondary {
+  color: #800000 !important;
+}
+.bg-secondary {
+  background-color: #7F7F7F !important;
+}
+.btn-secondary {
   background-color: #800000;
   border-color: #800000;
 }
-.btn-primary:hover {
-  background-color: #a60000;
-}
-.text-secondary {
-  color: #fff !important;
-}
-.bg-secondary {
-  background-color: #fff !important;
-}
-.btn-secondary {
-  background-color: #fff;
-  border-color: #fff;
-}
 .btn-secondary:hover {
-  background-color: #fff;
+  background-color: #800000;
 }
 .text-success {
   color: #7bed9f !important;
@@ -662,7 +678,7 @@ h6,
   z-index: 9;
 }
 .header .brand .logo {
-  height: 4rem;
+  width: 20rem;
 }
 .header.header-absolute,
 .header.header-fixed {
@@ -858,14 +874,14 @@ h6,
 }
 .footer {
   position: relative;
-  background-color: #800000;
-  color: #f5f5f5;
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
 }
 .footer a {
-  color: #fffafa;
+  color: #FFFFFF;
 }
 .footer a:hover {
-  color: #fff;
+  color: #f8f9fa;
 }
 .banner {
   position: relative;
@@ -884,7 +900,6 @@ h6,
   right: 0;
   left: 0;
   top: 0;
-  background-color: rgba(19,0,0,0.5);
 }
 .banner .banner-text {
   position: absolute;
@@ -897,7 +912,7 @@ h6,
 .banner .banner-text .page-type-title {
   padding: 0;
   font-weight: normal;
-  font-size: 3.2rem;
+  font-size: 6.4rem;
 }
 .carousel {
   position: relative;
@@ -935,6 +950,10 @@ h6,
 .carousel .carousel-radio[type="radio"]:checked + .carousel-indicators + .carousel-inner {
   display: block;
 }
+section {
+    margin-left: auto;
+    margin-right: auto;
+}
 .section .section-heading {
   position: relative;
   padding-bottom: 1rem;
@@ -948,7 +967,7 @@ h6,
   bottom: 0;
   width: 5rem;
   height: 0.3rem;
-  background-color: #fff;
+  background-color: #A6A6A6;
   border-radius: 0.3rem;
 }
 .card {
@@ -995,27 +1014,86 @@ h6,
 }
 .artcle-cover {
   position: relative;
-  max-height: 20rem;
+  height: auto;
   border-radius: 0.4rem;
-  overflow: hidden;
+  overflow: visible;
 }
 .artcle-cover .artcle-cover-img {
   position: relative;
-  min-height: 100%;
+  height: auto;
   max-width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 100%;
 }
 .article-inner {
-  padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .article-inner {
-    max-width: 90rem;
-    margin-right: auto;
+    padding: 1rem;
+    max-width: 60%;
+    height: auto;
     margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 1000px) {
+    .article-inner {
+        max-width: 80%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.article-wrapper {
+    display: flex;
+    justify-content: space-around; /* 确保图片等距排列 */
+    align-items: flex-start; /* 确保所有项目在顶部对齐 */
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* 允许换行，以适应小屏幕 */
+}
+
+.article-item {
+    text-align: center; /* 让姓名居中 */
+    width: 30%; /* 确保每个容器占30%宽度 */
+    padding: 10px; /* 增加内部填充 */
+    margin: 10px; /* 增加外部间距 */
+    box-sizing: border-box; /* 确保 padding 和 margin 不影响宽度 */
+}
+
+    .article-item img {
+        width: 100%; /* 确保图片占满容器 */
+        height: auto; /* 保持图片纵横比 */
+        max-width: 100%; /* 限制最大宽度 */
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-item p {
+        margin-top: 10px; /* 图片与名字之间的间距 */
+        font-size: 16px;
+        color: black; /* 可根据需要修改颜色 */
+    }
+
+@media screen and (max-width: 1000px) {
+    .article-wrapper {
+        flex-wrap: wrap; /* 小屏幕时自动换行 */
+        justify-content: center; /* 居中排列 */
+        margin: 10px; /* 保留外部间距 */
+    }
+
+    .article-item {
+        width: 45%; /* 小屏幕时每行两个项目 */
+        margin-bottom: 20px; /* 增加底部间距 */
+    }
+
+        .article-item img {
+            max-width: 80%; /* 小屏幕时缩小图片 */
+        }
+}
+
+@media screen and (max-width: 600px) {
+  .article-item {
+      width: 80%; /* 更小屏幕时每行一个项目 */
+      margin: 10px auto; /* 保持上下左右间隔并居中 */
   }
 }
+
 .article-header {
   margin-bottom: 1rem;
 }
@@ -1296,12 +1374,12 @@ pre .javascript .function {
   color: #c9c;
 }
 pre .marked {
-  background: #a60000;
+  background: #800000;
   color: rgba(255,255,255,0.8);
 }
 pre .deletion {
   background: #ffeef0;
-  color: #b31d28;
+  color: #800000;
 }
 pre .addition {
   background: #f0fff4;
@@ -1384,7 +1462,7 @@ code {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(19,0,0,0.85);
+  background-color: rgba(0,22,43,0.85);
 }
 .video-media article .article-inset {
   position: absolute;
@@ -1429,7 +1507,7 @@ code {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(19,0,0,0.5);
+  background: rgba(6, 6, 6, 0.5);
 }
 .hero-figure figcaption {
   position: absolute;
@@ -1882,7 +1960,7 @@ code {
 .list-inline {
   list-style: none;
   padding-left: 0;
-  margin-left: 0;
+  margin-left: auto;
 }
 .list-inline {
   position: relative;
@@ -2295,11 +2373,7 @@ code {
   box-shadow: 0 1rem 3rem rgba(33,37,41,0.125);
 }
 .filter-gray {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: #808080;
 }
 .index-about {
   position: relative;
@@ -2400,4 +2474,13 @@ code {
 .safari-btns:after {
   left: 3rem;
   background-color: #66c655;
+}
+
+@font-face {
+    font-family: 'Baumans';
+    src: url('themes/acorn/fonts/Baumans/Baumans-Regular.ttf') format('truetype'), url('themes/acorn/fonts/Baumans/OFL.txt') format('woff')
+}
+@font-face {
+    font-family: 'NotoSC';
+    src: url('themes/acorn/fonts/Noto_Serif_SC/NotoSerifSC-SemiBold.otf') format('truetype'), url('themes/acorn/fonts/Noto_Serif_SC/OFL.txt') format('woff')
 }
